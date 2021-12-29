@@ -85,17 +85,19 @@
     color:var(--main-text-color);
     margin-bottom:45px;
     border-radius:5px;
+    border:red solid 1px;
   background-color:transparent;
-    border:none;
     cursor:pointer;
     font-size:15px;
     font-family:monospace;
+    width:9rem;
   }
   #buttDiv{
-    width:5.8em;
+    width:18rem;
     display:flex;
     flex-direction:row;
     justify-content:space-between;
+   /* border:red solid 1px;*/
   }
   
   #lightButt:hover{
