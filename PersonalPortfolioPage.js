@@ -32,17 +32,27 @@ function light(){
       x[j].addEventListener("mouseout", changeFontBack);}
   
   function changeFont(){
-    var ranNum = (Math.floor(Math.random()*5)+1).toFixed(0);
+    var ranNum = (Math.floor(Math.random()*10)+1).toFixed(0);
     if(ranNum==1){
-  document.querySelector("#para1").style.color = "green"; }
+  document.querySelector("#para1").style.color = "#0055FF"; }
   if(ranNum==2){
-  document.querySelector("#para1").style.color = "yellow";}
+  document.querySelector("#para1").style.color = "#806a00";}
   if(ranNum==3){
   document.querySelector("#para1").style.color = "lightblue";} 
   if(ranNum==4){
   document.querySelector("#para1").style.color = "grey"; }
   if(ranNum==5){
   document.querySelector("#para1").style.color = "pink"; } 
+  if(ranNum==6){
+  document.querySelector("#para1").style.color = "#804bff"; } 
+  if(ranNum==7){
+  document.querySelector("#para1").style.color = "#55ffcc"; } 
+  if(ranNum==8){
+  document.querySelector("#para1").style.color = "#ffdd99"; } 
+  if(ranNum==9){
+  document.querySelector("#para1").style.color = "#C9A1D1"; } 
+  if(ranNum==10){
+    document.querySelector("#para1").style.color = "#333333"; } 
     }
   
     function changeFontBack(){
