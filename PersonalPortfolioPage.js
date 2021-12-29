@@ -34,13 +34,15 @@ function light(){
   function changeFont(){
     var ranNum = (Math.floor(Math.random()*10)+1).toFixed(0);
     if(ranNum==1){
-  document.querySelector("#para1").style.color = "#0055FF"; }
+  document.querySelector("#para1").style.color = "#0055FF";
+document.querySelector("#header1").style.color = "red"; }
   if(ranNum==2){
   document.querySelector("#para1").style.color = "#806a00";}
   if(ranNum==3){
   document.querySelector("#para1").style.color = "lightblue";} 
   if(ranNum==4){
-  document.querySelector("#para1").style.color = "grey"; }
+  document.querySelector("#para1").style.color = "grey";
+  document.querySelector("#header1").style.color = "lightBlue"; }
   if(ranNum==5){
   document.querySelector("#para1").style.color = "pink"; } 
   if(ranNum==6){
@@ -53,9 +55,9 @@ function light(){
   document.querySelector("#para1").style.color = "#C9A1D1"; } 
   if(ranNum==10){
     document.querySelector("#para1").style.color = "#333333"; } 
-    }
-  
+  }
     function changeFontBack(){
      document.querySelector("#para1").style.fontFamily ="verdana"; document.querySelector("#para1").style.color = "white";
+     document.querySelector("#header1").style.color = "white";
     }
   

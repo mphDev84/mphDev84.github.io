@@ -149,6 +149,7 @@
    border:red solid 1px;
     background-color: grey;
     grid-column-end: span 3; 
+    
   }
   .block:hover {
   background-color:black;
