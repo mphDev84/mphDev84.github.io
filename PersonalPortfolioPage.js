@@ -58,6 +58,6 @@ document.querySelector("#header1").style.color = "red"; }
   }
     function changeFontBack(){
      document.querySelector("#para1").style.fontFamily ="verdana"; document.querySelector("#para1").style.color = "white";
-     document.querySelector("#header1").style.color = "white";
+     document.querySelector("#header1").style.color = "--main-text-color";
     }
   
