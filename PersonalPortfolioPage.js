@@ -1,5 +1,6 @@
 function light(){ 
     document.getElementById("para1").style.color="black";
+    document.getElementById("header1").style.color="black";
     document.documentElement.style
       .setProperty('--main-background-color', 'linear-gradient(to right, #F7F7F7 0%, #F4F4F4 50%, #E5E5E5 100%)');
   
@@ -21,6 +22,7 @@ function light(){
     x[1].style.color='#CCFFFF';
     x[2].style.color='#CCFFFF';  
      document.getElementById("para1").style.color="white";
+     document.getElementById("header1").style.color="white";
   }
    var x, i;
     x = document.querySelectorAll(".block");
@@ -57,7 +59,7 @@ document.querySelector("#header1").style.color = "red"; }
     document.querySelector("#para1").style.color = "#333333"; } 
   }
     function changeFontBack(){
-     document.querySelector("#para1").style.fontFamily ="verdana"; document.querySelector("#para1").style.color = "white";
-     document.querySelector("#header1").style.color = "--main-text-color";
+     document.querySelector("#para1").style.fontFamily ="verdana"; document.querySelector("#para1").style.color = ("--main-text-color");
+     document.querySelector("#header1").style.color = ("--main-text-color");
     }
   
