@@ -236,14 +236,14 @@
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color:#99ccff;
+    background-color:#500021;
   }
   
   .project-tile:hover .overlay {
     opacity: 1;
   }
   .text {
-    color: black;
+    color: white;
     font-size: 20px;
     position: absolute;
     top: 50%;
