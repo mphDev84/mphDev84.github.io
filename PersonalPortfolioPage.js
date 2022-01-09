@@ -10,6 +10,7 @@ function light(){
     x[0].style.color='black';
     x[1].style.color='black';
     x[2].style.color='black';  
+    x[3].style.color='black';  
   }
   function dark(){
      document.documentElement.style
@@ -21,6 +22,7 @@ function light(){
     x[0].style.color='#CCFFFF';
     x[1].style.color='#CCFFFF';
     x[2].style.color='#CCFFFF';  
+    x[3].style.color='#CCFFFF';  
      document.getElementById("para1").style.color="white";
      document.getElementById("header1").style.color="white";
   }
