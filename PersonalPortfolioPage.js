@@ -1,6 +1,4 @@
 function light(){ 
-    document.getElementById("para1").style.color="black";
-    document.getElementById("header1").style.color="black";
     document.documentElement.style
       .setProperty('--main-background-color', 'linear-gradient(to right, #F7F7F7 0%, #F4F4F4 50%, #E5E5E5 100%)');
   
@@ -16,8 +14,7 @@ function light(){
      document.documentElement.style
       .setProperty('--main-background-color', 'linear-gradient(to right, #141414 0%, #323232 50%, #636363 100%)');
   
-  document.documentElement.style
-      .setProperty('--main-text-color', 'white');
+  document.documentElement.style.setProperty('--main-text-color', 'white');
      var x =document.getElementsByClassName("button");
     x[0].style.color='#CCFFFF';
     x[1].style.color='#CCFFFF';
@@ -60,8 +57,8 @@ document.querySelector("#header1").style.color = "red"; }
   if(ranNum==10){
     document.querySelector("#para1").style.color = "#333333"; } 
   }
-    function changeFontBack(){
+  /* function changeFontBack(){
      document.querySelector("#para1").style.fontFamily ="verdana"; document.querySelector("#para1").style.color = ("--main-text-color");
      document.querySelector("#header1").style.color = ("--main-text-color");
-    }
+    } */
   

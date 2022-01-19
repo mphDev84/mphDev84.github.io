@@ -68,6 +68,7 @@
     flex-direction: row;
     width: 600px;
     justify-content: space-around;
+  
   }
   #javaScript,
   #html,
@@ -88,6 +89,7 @@
   }
   #para1{
     font-size: 25px;
+    color:var(--main-text-color);
   }
   i,
   img{
