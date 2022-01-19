@@ -1,12 +1,27 @@
 
 <!DOCTYPE html>
-<html>
+<html>  
 <head>
-<meta charset="UTF-8">
-<link href="PersonalPortfolioPageCSS.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+  integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+  crossorigin="anonymous"
+/>
+<link
+  href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
+  rel="stylesheet"
+/>
+<link
+  href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
+  rel="stylesheet"
+/>
+
+  <link href="PersonalPortfolioPageCSS.css" rel="stylesheet">
   <title>Personal Portfolio Page</title>
   <script src="PersonalPortfolioPage.js"></script>
-  </head>
+</head>
   <body id="home">
     <nav id="navbar">  
       <ul class="nav-bar">
@@ -19,7 +34,17 @@
       <section class="welcome-section" id="welcome-section">
         <h1 id="header1">-Matt Howels-<br>Personal Portfolio Page</h1><br>
         <div id="buttDiv"><button type="button" id="lightButt" class="lightButt" onclick="light()">-Light Mode-</button><button type ="button" id="lightButt" class="lightButt" onclick="dark()">-Dark Mode-</button></div>
-        <p id="para1">I am a Web developer, programmer and musician. I am currently self-learning HTML5, CSS, Javascript and Java. Below are some examples of my work!</p><br>
+        <div id="outer_skills">
+        <p id="para1">My Skills:</p><br>
+       <div id="skills">
+        <p id="javaScript"><img src="https://img.icons8.com/nolan/64/javascript.png"/>JavaScript</p>
+        <p id="html"><img src="https://img.icons8.com/color/48/000000/html-5--v1.png"/>HTML</p>
+        <p id="css"><img src="https://img.icons8.com/nolan/64/css-filetype.png"/>CSS</p>
+        <p id="java"><img src="https://img.icons8.com/nolan/64/java-coffee-cup-logo.png"/>Java</p>
+        <p id="node"><img src="https://img.icons8.com/fluency/48/000000/node-js.png"/>Node.js</p>
+        <p id="react"><img src="https://img.icons8.com/office/16/000000/react.png"/>React</p>
+       </div>
+       </div>
       </section><br>
       <div class="container-wrapper">
       <div class="container">
@@ -50,6 +75,9 @@
           <div class="project-tile">
             <a class="link" href="https://mphdev84.github.io/Add-Employee-Form/" target="_blank">
 <img class="image" src="./pics/AddEmployeePagePic.png" alt="Add Employee Page"><div class="overlay"><div class="text">'Add Employee' app - Node.js</div></div><p class="project-name"><code>'Add Employee' app - Node.js</code></p></a></div>
+<div class="project-tile">
+  <a class="link" href="https://mphdev84.github.io/Weather-App/" target="_blank">
+<img class="image" src="./pics/WeatherApp.png" alt="My Weather App"><div class="overlay"><div class="text">My Weather App</div></div><p class="project-name"><code>My Weather App</code></p></a></div>
           <div class="project-tile">
             <a class="link" href="https://mphdev84.github.io/Date-Countdown-Timer/" target="_blank">
 <img class="image" src="./pics/Countdown.png" alt="Date Countdown Timer"><div class="overlay"><div class="text">Date Countdown Timer</div></div><p class="project-name"><code>Date Countdown Timer</code></p></a></div>
@@ -64,9 +92,9 @@
       </section>
       <h2 id="contact2">-- Links --</h2>
       <section id="contact">
-  <a id="profile-link" class="button"  href="https://github.com/mphDev84" target="_blank"><i class="fab fa-github"></i>GitHub Profile</a><br>  <a id="profile-link" class="button" href="https://www.freecodecamp.org/fccbe5ffc5d-8c0b-4436-8466-3dfedf04530b" target="_blank"><i class="fa fa-cogs"></i>FreeCodeCamp Profile</a>
-        <p id = "para4">Free Code Camp Certifications:</p> <a id="profile-link" class="button"href="https://www.freecodecamp.org/certification/fccbe5ffc5d-8c0b-4436-8466-3dfedf04530b/responsive-web-design" target="_blank"><i class="fa fa-certificate"></i>Responsive Web Design</a>
-        <a id="profile-link" class="button"href="https://www.freecodecamp.org/certification/fccbe5ffc5d-8c0b-4436-8466-3dfedf04530b/javascript-algorithms-and-data-structures" target="_blank"><i class="fa fa-certificate"></i>Javascript Algorithms and Data Structures</a>
+  <a id="profile-link" class="button"  href="https://github.com/mphDev84" target="_blank"><i class="fab fa-github"></i> GitHub Profile</a><br>  <a id="profile-link" class="button" href="https://www.freecodecamp.org/fccbe5ffc5d-8c0b-4436-8466-3dfedf04530b" target="_blank"><i class="fa fa-cogs"></i>  FreeCodeCamp Profile</a><br>
+  <a id="profile-link" class="button"  href="mailto:howelsMatthew@gmail.com"><i class="far fa-envelope"></i> Email Me!</a><br> 
+        
   </section>
       <div id="bottom"></div>
       <script src="PersonalPortfolioPage.js"></script>
