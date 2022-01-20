@@ -41,7 +41,7 @@
     
   }
   li a:hover{
-    background-color:#660044;
+    background-color:#b4afb3;
     opacity:0.8;
     border-radius:15px;
   
@@ -244,6 +244,8 @@
      transition: transform 0.3s ease-out;
   }
   .button:hover {
+    /*color below is re-assigned to overwrite Bootstrap */
+    color:#CCFFFF;
     transform: translateX(8px);
   }
   .image{

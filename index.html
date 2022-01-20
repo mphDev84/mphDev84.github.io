@@ -3,6 +3,7 @@
 <html>  
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link
   rel="stylesheet"
   href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
@@ -23,6 +24,8 @@
   <script src="PersonalPortfolioPage.js"></script>
 </head>
   <body id="home">
+
+<!--
     <nav id="navbar">  
       <ul class="nav-bar">
         <li><a class="nav-link" href="#contact">Contact/Links</a></li>
@@ -30,6 +33,40 @@
         <li><a class="nav-link" href="#welcome-section">About Me</a></li>
       </ul>
       </nav>
+    -->
+
+<!--Here's my BOOTSTRAP navbar!-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav" id="myNavBar">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">My Work</a>
+          </li>
+        <!---  <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li> -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Contact Links!
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="https://github.com/mphDev84" target="_blank">GitHub</a>
+              <a class="dropdown-item" href="#">LinkedIn</a>
+              <a class="dropdown-item" href="mailto:howelsMatthew@gmail.com?subject=Hello there...">Email Me</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
     <main>
       <section class="welcome-section" id="welcome-section">
         <h1 id="header1">-Matt Howels-<br>Personal Portfolio Page</h1><br>
@@ -46,59 +83,86 @@
        </div>
        </div>
       </section><br>
+      <!--
       <div class="container-wrapper">
-      <div class="container">
-      <div class="block"></div>
-      <div class="block"></div>
+        <div class="container">
         <div class="block"></div>
         <div class="block"></div>
-      <div class="block"></div>
-         <div class="block"></div>
-         <div class="block"></div>
-         <div class="block"></div>
-         <div class="block"></div>
-         <div class="block"></div>
-         <div class="block"></div>
-         <div class="block"></div>
-         <div class="block"></div>
-         <div class="block"></div>
         <div class="block"></div>
-</div> 
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        </div> 
       </div>
+    -->
       <section class="my-work" id="projects">
        <p id="para3"> Thanks for visiting! </p>
         <div class="grid">
-          <div class="project-tile"> <a class="link" href="https://mphdev84.github.io/My-Hangman-Game/" target="_blank">
-<img class="image" src="./pics/HangPic.png"><div class="overlay"><div class="text">My Hangman Game</div></div><p class="project-name"><code>My Hangman Game</code></p></a></div> 
-          <div class="project-tile"> <a class="link"  href="https://mphdev84.github.io/HTML-CSS-Technical-Documentation-Page/" target="_blank">
-<img class="image" src="./pics/techpic.png" alt ="Technical Documentation Page"><div class="overlay"><div class="text">Technical Documentation Page</div></div><p class="project-name"><code>Technical Documentation Page</code></p></a></div>
+          <div class="project-tile">
+            <a class="link" href="https://mphdev84.github.io/My-Hangman-Game/" target="_blank">
+<img class="image" src="./pics/HangPic.png">
+<div class="overlay"><div class="text">My Hangman Game</div></div>
+<p class="project-name"><code>My Hangman Game</code></p></a></div> 
+          <div class="project-tile">
+            <a class="link"  href="https://mphdev84.github.io/HTML-CSS-Technical-Documentation-Page/" target="_blank">
+<img class="image" src="./pics/techpic.png" alt ="Technical Documentation Page">
+<div class="overlay"><div class="text">Technical Documentation Page</div></div>
+<p class="project-name"><code>Technical Documentation Page</code></p></a></div>
           <div class="project-tile">
             <a class="link" href="https://mphdev84.github.io/Add-Employee-Form/" target="_blank">
-<img class="image" src="./pics/AddEmployeePagePic.png" alt="Add Employee Page"><div class="overlay"><div class="text">'Add Employee' app - Node.js</div></div><p class="project-name"><code>'Add Employee' app - Node.js</code></p></a></div>
+<img class="image" src="./pics/AddEmployeePagePic.png" alt="Add Employee Page">
+<div class="overlay"><div class="text">'Add Employee' app - Node.js</div></div>
+<p class="project-name"><code>'Add Employee' app - Node.js</code></p></a></div>
 <div class="project-tile">
   <a class="link" href="https://mphdev84.github.io/Weather-App/" target="_blank">
-<img class="image" src="./pics/WeatherApp.png" alt="My Weather App"><div class="overlay"><div class="text">My Weather App</div></div><p class="project-name"><code>My Weather App</code></p></a></div>
+<img class="image" src="./pics/WeatherApp.png" alt="My Weather App"><div class="overlay">
+  <div class="text">My Weather App</div></div>
+  <p class="project-name"><code>My Weather App</code></p></a></div>
           <div class="project-tile">
             <a class="link" href="https://mphdev84.github.io/Date-Countdown-Timer/" target="_blank">
-<img class="image" src="./pics/Countdown.png" alt="Date Countdown Timer"><div class="overlay"><div class="text">Date Countdown Timer</div></div><p class="project-name"><code>Date Countdown Timer</code></p></a></div>
+<img class="image" src="./pics/Countdown.png" alt="Date Countdown Timer">
+<div class="overlay"><div class="text">Date Countdown Timer</div></div>
+<p class="project-name"><code>Date Countdown Timer</code></p></a></div>
 <div class="project-tile">
   <a class="link" href="https://mphdev84.github.io/Random-Number-Generator/" target="_blank">
-<img class="image" src="./pics/Rando.png" alt="Random Number Generator"><div class="overlay"><div class="text">Random Number Generator</div></div><p class="project-name"><code>Random Number Generator</code></p></a></div>
-
-<div class="project-tile"> <a class="link" href="https://mphdev84.github.io/To-Do-List/" target="_blank">
-<img class="image" src="./pics/ToDoList.png" alt="to-do list"><div class="overlay"><div class="text">To-Do List</div></div><p class="project-name"><code>To-Do List</code></p></a></div>
-          <div class="project-tile"> <a class="link" href="https://github.com/mphDev84/JAVA-Product-Viewer-Console-App" target="_blank">
-<img class="image" src="./pics/Java.png" alt="Java Product Viewer App"><div class="overlay"><div class="text">Java "Product Viewer" Console Program</div></div><p class="project-name"><code>Java "Product Viewer" Console Program</code></p></a></div>
+<img class="image" src="./pics/Rando.png" alt="Random Number Generator">
+<div class="overlay"><div class="text">Random Number Generator</div></div>
+<p class="project-name"><code>Random Number Generator</code></p></a></div>
+<div class="project-tile"> 
+  <a class="link" href="https://mphdev84.github.io/To-Do-List/" target="_blank">
+<img class="image" src="./pics/ToDoList.png" alt="to-do list">
+<div class="overlay"><div class="text">To-Do List</div></div><p class="project-name"><code>To-Do List</code></p></a></div>
+          <div class="project-tile"> 
+            <a class="link" href="https://github.com/mphDev84/JAVA-Product-Viewer-Console-App" target="_blank">
+<img class="image" src="./pics/Java.png" alt="Java Product Viewer App">
+<div class="overlay"><div class="text">Java "Product Viewer" Console Program</div></div>
+<p class="project-name"><code>Java "Product Viewer" Console Program</code></p></a></div>
       </section>
-      <h2 id="contact2">-- Links --</h2>
+      <h2 id="contact2">-- Links --</h2><br><br>
       <section id="contact">
-  <a id="profile-link" class="button"  href="https://github.com/mphDev84" target="_blank"><i class="fab fa-github"></i> GitHub Profile</a><br>  <a id="profile-link" class="button" href="https://www.freecodecamp.org/fccbe5ffc5d-8c0b-4436-8466-3dfedf04530b" target="_blank"><i class="fa fa-cogs"></i>  FreeCodeCamp Profile</a><br>
-  <a id="profile-link" class="button"  href="mailto:howelsMatthew@gmail.com"><i class="far fa-envelope"></i> Email Me!</a><br> 
+  <a id="profile-link" class="button"  href="https://github.com/mphDev84" target="_blank">
+    <i class="fab fa-github"></i> GitHub Profile</a><br>  
+    <a id="profile-link" class="button" href="https://www.freecodecamp.org/fccbe5ffc5d-8c0b-4436-8466-3dfedf04530b" target="_blank">
+      <i class="fa fa-cogs"></i>  FreeCodeCamp Profile</a><br>
+  <a id="profile-link" class="button"  href="mailto:howelsMatthew@gmail.com?subject=Hello there...">
+    <i class="far fa-envelope"></i> Email Me!</a><br> 
         
   </section>
       <div id="bottom"></div>
       <script src="PersonalPortfolioPage.js"></script>
         </main>
         <script src="PersonalPortfolioPage.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html> 

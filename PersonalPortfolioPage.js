@@ -1,28 +1,37 @@
-function light(){ 
+function light(){ //called from onClick event
+  //change background color
     document.documentElement.style
       .setProperty('--main-background-color', 'linear-gradient(to right, #F7F7F7 0%, #F4F4F4 50%, #E5E5E5 100%)');
   
+    //change 'button' color 
   document.documentElement.style
       .setProperty('--main-text-color', 'black');  
-    var x =document.getElementsByClassName("button");
+    let x =document.getElementsByClassName("button");
     x[0].style.color='black';
     x[1].style.color='black';
     x[2].style.color='black';  
     x[3].style.color='black';  
   }
-  function dark(){
+
+  function dark(){//called from onClick event 
+    //change background color back to that at page load
      document.documentElement.style
       .setProperty('--main-background-color', 'linear-gradient(to right, #141414 0%, #323232 50%, #636363 100%)');
   
+      //change text colors 
   document.documentElement.style.setProperty('--main-text-color', 'white');
-     var x =document.getElementsByClassName("button");
+     let x =document.getElementsByClassName("button");
     x[0].style.color='#CCFFFF';
     x[1].style.color='#CCFFFF';
     x[2].style.color='#CCFFFF';  
     x[3].style.color='#CCFFFF';  
      document.getElementById("para1").style.color="white";
      document.getElementById("header1").style.color="white";
-  }
+  };
+
+  //the code below is related to the commented-out 'divs' in index.html (lines 49-69), with the class "block".
+
+  /*
    var x, i;
     x = document.querySelectorAll(".block");
     for (i = 0; i < x.length; i++) {
@@ -31,7 +40,10 @@ function light(){
     x = document.querySelectorAll(".block");
     for (j = 0; j < x.length; j++) {
       x[j].addEventListener("mouseout", changeFontBack);}
+
+      */
   
+    /*
   function changeFont(){
     var ranNum = (Math.floor(Math.random()*10)+1).toFixed(0);
     if(ranNum==1){
@@ -57,6 +69,8 @@ document.querySelector("#header1").style.color = "red"; }
   if(ranNum==10){
     document.querySelector("#para1").style.color = "#333333"; } 
   }
+*/
+
   /* function changeFontBack(){
      document.querySelector("#para1").style.fontFamily ="verdana"; document.querySelector("#para1").style.color = ("--main-text-color");
      document.querySelector("#header1").style.color = ("--main-text-color");
