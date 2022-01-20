@@ -152,8 +152,9 @@
   #para3{
     margin-top:3em;
     text-align:center;
-    font-size:25px;
-    font-family:verdana;
+    font-size:35px;
+    font-family:monospace;
+    letter-spacing: 5px;
     color:var(--main-text-color);
     font-style:Oblique;
   }
