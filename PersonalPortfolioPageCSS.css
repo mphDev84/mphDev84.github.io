@@ -288,4 +288,18 @@
     transform: translate(-50%, -50%);
     text-align: center;
   }
-  
+  #scrollToTopBtn {
+    background-color: black;
+    border-radius:10px;
+    color: white;
+    cursor:pointer;
+    font-size: 15px;
+    line-height: 40px;
+    border:white solid 1px;
+    width: 48px;
+  }
+  footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 25px;
+  }

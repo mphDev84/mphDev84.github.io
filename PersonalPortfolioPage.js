@@ -29,6 +29,16 @@ function light(){ //called from onClick event
      document.getElementById("header1").style.color="white";
   };
 
+  let scrollToTopBtn = document.querySelector("#scrollToTopBtn");
+  let rootElement = document.documentElement;
+
+  function scrollToTop (){
+    rootElement.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+
   //the code below is related to the commented-out 'divs' in index.html (lines 49-69), with the class "block".
 
   /*
