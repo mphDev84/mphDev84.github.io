@@ -64,6 +64,7 @@
     margin-right: 150px;
   }
   #outer_skills{
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     width: 500px;
@@ -136,6 +137,7 @@
     width:9rem;
   }
   #buttDiv{
+    margin-top: 20px;
     width:18rem;
     display:flex;
     flex-direction:row;
