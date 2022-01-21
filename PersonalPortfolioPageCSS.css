@@ -298,9 +298,15 @@ footer {
   #scrollToTopBtn {
     background-color: black;
     border: white solid 2px;
+    border-radius: 5px;
     color: white;
     cursor: pointer;
     font-size: 15px;
     line-height: 40px;
     width: 60px;
+  }
+  #scrollToTopBtn:hover{
+    font-weight: 700;
+    background-color: white;
+    color: rgb(1, 1, 75);
   }
