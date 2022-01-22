@@ -1,3 +1,15 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 :root{
     font-size:15px;
     font-family:verdana;
@@ -46,6 +58,10 @@
     border-radius:15px;
   
   }
+  .dropdown-item:hover{
+  color:rgb(8, 0, 0);
+  background-color: rgb(95, 200, 248);
+  }
   #welcome-section{
     margin-top:0.5em;
     display:flex;
@@ -88,6 +104,11 @@
     font-style:Oblique;
     justify-content:start;
     align-items:center;
+  }
+  .icon-animation{
+    color: red;
+    transform: scale(2);
+  /*  transform: translateY(-120%) rotate(720deg);*/
   }
   #para1{
     font-size: 25px;
@@ -312,4 +333,32 @@ footer {
     color: rgb(1, 1, 75);
     border: rgb(139, 2, 2) solid 2px;
     box-shadow: black 8px 8px 5px;
+  }
+
+  .align-left {
+    float: left;
+    margin-right: 20px;
+  }
+
+  .align-right {
+    float: right;
+    margin-left: 20px;
+  }
+
+  .slide-in {
+    opacity: 0;
+    transition: all .7s;
+  }
+
+  .align-left.slide-in {
+    transform: translateX(-30%) scale(0.95);
+  }
+  
+  .align-right.slide-in {
+    transform: translateX(30%) scale(0.95);
+  }
+
+  .slide-in.active {
+    opacity: 1;
+    transform: translateX(0%) scale(1);
   }

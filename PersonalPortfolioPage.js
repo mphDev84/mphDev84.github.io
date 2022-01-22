@@ -38,8 +38,44 @@ function scrollToTop() {
     top: 0,
     behavior: "smooth"
   });
+};
+
+function debounce(func, wait = 20, immediate = true) {
+  var timeout;
+  return function() {
+    var context = this, args = arguments;
+    var later = function() {
+      timeout = null;
+      if (!immediate) func.apply(context, args);
+    };
+    var callNow = immediate && !timeout;
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+    if (callNow) func.apply(context, args);
+  };
+};
+
+var sliderImages = document.querySelectorAll('.slide-in');
+
+function checkSlide(){
+    
+  sliderImages.forEach(slideImage=>{
+      //half-way through image
+      const slideInAt = ((window.scrollY + window.innerHeight) - 705) / 2;
+      //bottom of image
+   const imageBottom = 1000;
+   const isHalfShown = slideInAt > 205;
+   console.log(isHalfShown)
+   const isNotScrolledPast = window.scrollY <imageBottom;
+   if(isHalfShown&&isNotScrolledPast){
+    slideImage.classList.add('active');
+}else{
+   slideImage.classList.remove('active');
 }
-scrollToTopBtn.addEventListener("click", scrollToTop);
+  });
+};
+
+window.addEventListener("scroll", debounce(checkSlide));
 
   //the code below is related to the commented-out 'divs' in index.html (lines 49-69), with the class "block".
 
