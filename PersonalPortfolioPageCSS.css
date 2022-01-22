@@ -311,4 +311,5 @@ footer {
     background-color: white;
     color: rgb(1, 1, 75);
     border: rgb(139, 2, 2) solid 2px;
+    box-shadow: black 8px 8px 5px;
   }
