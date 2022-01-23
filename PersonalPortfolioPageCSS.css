@@ -215,9 +215,10 @@ body {
   
   .grid{
     display:flex;
-    flex-direction:row;
-    justify-content:space-around;
+    flex-direction:column;
+    align-content: center;
     flex-wrap:wrap;
+    height: 1000px;
   }
   .project-tile{
    flex-wrap:wrap;
@@ -226,9 +227,9 @@ body {
     box-shadow: 1px 1px 1px 1px black;
     width:190px;
     height:205px;
-    margin:10px;
     background:#2e2e2e;
     position:relative;
+    margin: 20px 20px 20px 0px;
   }
   .project-name{
    text-decoration:none;
@@ -246,11 +247,6 @@ body {
     text-decoration:none;
   
   }
-  h2{
-    text-align:center;
-    color:var(--main-text-color);
-    font-size:36px;
-  }
   #contact{
     display:flex;
     flex-direction:column;
@@ -260,6 +256,11 @@ body {
   }
   #contact2{
     margin-top: 2em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 6px;
+    text-align:center;
+    color:var(--main-text-color);
+    font-size:36px;
   }
   #para4{
     color:var(--main-text-color);
@@ -337,12 +338,12 @@ footer {
 
   .align-left {
     float: left;
-    margin-right: 20px;
+    margin-right: 0px;
   }
 
   .align-right {
     float: right;
-    margin-left: 20px;
+    margin-left: 0px;
   }
 
   .slide-in {
@@ -351,11 +352,11 @@ footer {
   }
 
   .align-left.slide-in {
-    transform: translateX(-30%) scale(0.95);
+    transform: translateX(-50%) scale(0.95);
   }
   
   .align-right.slide-in {
-    transform: translateX(30%) scale(0.95);
+    transform: translateX(50%) scale(0.95);
   }
 
   .slide-in.active {
