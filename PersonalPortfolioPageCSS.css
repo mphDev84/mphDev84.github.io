@@ -362,20 +362,20 @@ footer {
      color:var(--main-text-color);
 }  
 #nameHeader {  
-    animation: textVisible 6s infinite;
+    animation: textVisible 5s infinite;
     width:600px;
     margin-top: 1.5em;
     margin-left: 1em;
   }
   
 #restOfHeader {
-    animation: reveal 6s infinite;
+    animation: reveal 5s infinite;
     margin-bottom: 2em;
     margin-left: 1em;
   }
   
 #restOfHeader span {
-    animation: slidein 6s infinite;
+    animation: slidein 5s infinite;
   width: 600px;
   position: absolute;
   }
