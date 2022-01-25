@@ -31,31 +31,16 @@ body {
   position:fixed;
    
   }
-  .nav-bar{
-    display:flex;
-    justify-content:right;
-    list-style-type:none;
-    width: 97%;
-    overflow:none;
-   padding: 0px, 10px;
-    background-color:none;
-     border-radius:15px;
-    opacity:0.8;
-    
-  }
   li a {
     display:block;
     color:var(--main-text-color);
     font-size:1.2em;
     padding:15px 60px;
     text-decoration:none;
-    opacity:0.8;
-    
   }
   li a:hover{
-    background-color:#c9c6c8;
-    opacity:0.8;
-    border-radius:15px;
+    background-color:#924646;
+    border-radius:5px;
   
   }
   .dropdown-item:hover{
@@ -364,3 +349,57 @@ footer {
     opacity: 1;
     transform: translateX(0%) scale(1);
   }
+
+  /*header animation:*/
+
+#restOfHeader,
+#nameHeader {
+    display:flex;
+    overflow:hidden;
+    font-weight:100;
+     font-family: monospace;
+     font-size:50px;
+     color:var(--main-text-color);
+}  
+#nameHeader {  
+    animation: showup 6s infinite;
+    width:1000px;
+    margin-top: 1.5em;
+    margin-left: 1em;
+  }
+  
+#restOfHeader {
+    width:0px;
+    animation: reveal 6s infinite;
+    margin-bottom: 2em;
+    margin-left: 1em;
+  }
+  
+#restOfHeader span {
+    animation: slidein 6s infinite;
+  width: 1000px;
+  position: absolute;
+  }
+  
+@keyframes showup {
+      0% {opacity:0;}
+      20% {opacity:1;}
+      80% {opacity:1;}
+      100% {opacity:0;}
+  }
+
+@keyframes slidein {
+      0% { margin-left:-800px; }
+      20% { margin-left:-800px; }
+      35% { margin-left:0px; }
+      100% { margin-left:0px; }
+  }
+  
+@keyframes reveal {
+      0% {opacity:0;width:0px;}
+      20% {opacity:1;width:0px;}
+      30% {width:355px;}
+      80% {opacity:1;}
+      100% {opacity:1;width:355px;}
+     }
+  
