@@ -362,7 +362,7 @@ footer {
      color:var(--main-text-color);
 }  
 #nameHeader {  
-    animation: showup 6s infinite;
+    animation: textVisible 6s infinite;
     width:600px;
     margin-top: 1.5em;
     margin-left: 1em;
@@ -380,7 +380,7 @@ footer {
   position: absolute;
   }
   
-@keyframes showup {
+@keyframes textVisible {
       0% {opacity:0;}
       20% {opacity:1;}
       80% {opacity:1;}
