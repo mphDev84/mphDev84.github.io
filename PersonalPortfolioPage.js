@@ -62,7 +62,7 @@ function checkSlide(){
   sliderImages.forEach(slideImage=>{
       //half-way through image
       const slideImageHeight = 705;
-      const slideInAt = ((window.scrollY + window.innerHeight) - slideImageHeight) / 2;
+      const slideInAt = ((window.scrollY + window.innerHeight) - slideImageHeight) / 1.5;
       //bottom of image
    const imageBottom = 1600;
    const newHeight = 305;
