@@ -363,13 +363,12 @@ footer {
 }  
 #nameHeader {  
     animation: showup 6s infinite;
-    width:1000px;
+    width:600px;
     margin-top: 1.5em;
     margin-left: 1em;
   }
   
 #restOfHeader {
-    width:0px;
     animation: reveal 6s infinite;
     margin-bottom: 2em;
     margin-left: 1em;
@@ -377,7 +376,7 @@ footer {
   
 #restOfHeader span {
     animation: slidein 6s infinite;
-  width: 1000px;
+  width: 600px;
   position: absolute;
   }
   
