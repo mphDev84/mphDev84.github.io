@@ -118,7 +118,7 @@ body {
      font-size:50px;
      color:var(--main-text-color);
   }
-  
+  /*
   @media screen and(min-device-width:768px)and(max-device-width:1024px){
     #home{
       display:flex;
@@ -133,6 +133,7 @@ body {
         width:50px;
       }
   }
+  */
   #lightButt{
     color:var(--main-text-color);
     margin-bottom:45px;
@@ -145,7 +146,8 @@ body {
     width:9rem;
   }
   #buttDiv{
-    margin-top: 20px;
+    border:solid red 1px;
+    margin-top: 10em;
     width:18rem;
     display:flex;
     flex-direction:row;
@@ -157,14 +159,14 @@ body {
     opacity:0.8;
     transform:translateY(2px);
   } 
-  #para3{
+  #projects-header{
     margin-top:3em;
     text-align:center;
     font-size:35px;
     font-family:monospace;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     color:var(--main-text-color);
-    font-style:Oblique;
+    
   }
   .container-wrapper{
     display:flex;

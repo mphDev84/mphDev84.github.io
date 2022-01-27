@@ -61,8 +61,10 @@ function checkSlide(){
     
   sliderImages.forEach(slideImage=>{
       //half-way through image
-      const slideImageHeight = 705;
-      const slideInAt = ((window.scrollY + window.innerHeight) - slideImageHeight) / 1.5;
+      /*NOTE - I have hard-coded the pixel values below, I can't find a way of accessing the height
+      of the 'slideImage' div element on the html page. These hacks work for now.*/  
+  const slideImageHeight = 705;
+  const slideInAt = ((window.scrollY + window.innerHeight) - slideImageHeight) / 1.5;
       //bottom of image
    const imageBottom = 1600;
    const newHeight = 305;
