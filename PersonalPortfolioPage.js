@@ -1,7 +1,7 @@
 function light(){ //called from onClick event
   //change background color
     document.documentElement.style
-      .setProperty('--main-background-color', 'linear-gradient(to right, #F7F7F7 0%, #F4F4F4 50%, #E5E5E5 100%)');
+      .setProperty('--main-background-color', 'linear-gradient(to right, #D9DBDB 0%, #D0D6E5 50%, #EAE8E9 100%)');
   
     //change 'button' color 
   document.documentElement.style
