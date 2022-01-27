@@ -146,8 +146,8 @@ body {
     width:9rem;
   }
   #buttDiv{
-    border:solid red 1px;
-    margin-top: 10em;
+    margin-top: 15em;
+    margin-left: 5em;
     width:18rem;
     display:flex;
     flex-direction:row;
