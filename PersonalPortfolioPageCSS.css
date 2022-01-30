@@ -364,7 +364,9 @@ footer {
      color:var(--main-text-color);
 }  
 #nameHeader {  
-    animation: textVisible 5s infinite;
+  animation-name: textVisible; 
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
     width:600px;
     margin-top: 1.5em;
     margin-left: 1em;
