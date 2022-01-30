@@ -371,13 +371,18 @@ footer {
   }
   
 #restOfHeader {
-    animation: reveal 5s infinite;
+    animation-name: reveal; 
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
     margin-bottom: 2em;
     margin-left: 1em;
   }
   
 #restOfHeader span {
-    animation: slidein 5s infinite;
+ /*   animation: slidein 5s infinite;*/
+ animation-name: slidein; 
+ animation-duration: 5s;
+ animation-iteration-count: infinite;
   width: 600px;
   position: absolute;
   }
