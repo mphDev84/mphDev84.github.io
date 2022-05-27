@@ -57,7 +57,7 @@ function debounce(func, wait = 20, immediate = true) {
 
 var sliderImages = document.querySelectorAll('.slide-in');
 
-function checkSlide(){
+function checkSlide(){  
     
   sliderImages.forEach(slideImage=>{
       //half-way through image
