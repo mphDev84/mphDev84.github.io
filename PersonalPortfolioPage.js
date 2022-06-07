@@ -72,7 +72,7 @@ function checkSlide() {
 		const slideInAt =
 			(window.scrollY + window.innerHeight - slideImageHeight) / 2;
 		//bottom of image
-		const imageBottom = 1600;
+		const imageBottom = 1800;
 		const newHeight = 305;
 		const isHalfShown = slideInAt > newHeight;
 		const isNotScrolledPast = window.scrollY < imageBottom;
