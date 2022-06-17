@@ -73,7 +73,7 @@ li a:hover {
 	margin-top: 40px;
 	display: flex;
 	flex-direction: column;
-	width: 500px;
+	width: 800px;
 	justify-content: space-around;
 }
 #javaScript,
@@ -85,11 +85,11 @@ li a:hover {
 #node,
 #react,
 #para1,
-#mongo {
+#mongo,
+#python {
 	display: flex;
 	width: auto;
 	font-size: 12px;
-	margin-left: 15px;
 	font-family: verdana;
 	color: var(--main-text-color);
 	font-style: Oblique;
@@ -217,6 +217,26 @@ img {
 	flex-wrap: wrap;
 	height: 1300px;
 }
+#tile-wrapper {
+	height: 230px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	border: rgb(8, 8, 97) 5px solid;
+	background-color: grey;
+	border-radius: 5px;
+	margin: 10px 10px 10px 10px;
+	padding-left: 10px;
+}
+#tile-desc {
+	color: white;
+	font-family: georgia;
+	font-size: 12px;
+	letter-spacing: 2px;
+	text-decoration: none;
+	width: 170px;
+}
+
 .project-tile {
 	flex-wrap: wrap;
 	border: 1px solid #400000;
@@ -350,11 +370,11 @@ footer {
 }
 
 .align-left.slide-in {
-	transform: translateX(-50%) scale(0.95);
+	transform: translateX(-30%) scale(0.95);
 }
 
 .align-right.slide-in {
-	transform: translateX(50%) scale(0.95);
+	transform: translateX(30%) scale(0.95);
 }
 
 .slide-in.active {
