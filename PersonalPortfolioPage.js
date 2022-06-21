@@ -68,7 +68,7 @@ function checkSlide() {
 		//half-way through image
 		/*NOTE - I have hard-coded the pixel values below, I can't find a way of accessing the height
       of the 'slideImage' div element on the html page. These hacks work for now.*/
-		const slideImageHeight = 705;
+		const slideImageHeight = 505;
 		const slideInAt =
 			(window.scrollY + window.innerHeight - slideImageHeight) / 2;
 		//bottom of image
