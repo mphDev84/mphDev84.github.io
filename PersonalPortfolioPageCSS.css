@@ -151,7 +151,7 @@ img {
 	width: 9rem;
 }
 #buttDiv {
-	margin-top: 15em;
+	margin-top: 5em;
 	margin-left: 5em;
 	width: 18rem;
 	display: flex;
@@ -385,7 +385,8 @@ footer {
 /*header animation:*/
 
 #restOfHeader,
-#nameHeader {
+#nameHeader,
+#nameHeader_02 {
 	display: flex;
 	overflow: hidden;
 	font-weight: 100;
@@ -395,10 +396,17 @@ footer {
 }
 #nameHeader {
 	animation-name: textVisible;
-	animation-duration: 5s;
+	animation-duration: 7s;
 	animation-iteration-count: infinite;
 	width: 600px;
 	margin-top: 1.5em;
+	margin-left: 1em;
+}
+#nameHeader_02 {
+	animation-name: textVisible;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+	width: 600px;
 	margin-left: 1em;
 }
 
@@ -406,7 +414,7 @@ footer {
 	animation-name: reveal;
 	animation-duration: 5s;
 	animation-iteration-count: infinite;
-	margin-bottom: 2em;
+
 	margin-left: 1em;
 }
 
